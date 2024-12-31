@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(to top, #191919, #000000);
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 70px;
+    margin: 25px 0px 100px 0px;
+}
+
+@media (max-width: 525px){
+    .title {
+        font-size: 50px;
+    }
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+
+@media (max-width: 415px) {
+    .contenedor {
+        width: 300px;
+    }
+}
+
+.my-button {
+    margin: 20px 50px 0 50px;
+    white-space: nowrap;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 50% ;
+    transition: 0.4s ease;
+}
+
+.my-button:hover {
+    transform: scale(1.15);
+    background-color: #bdbdbd;
+}
+
+.icons-songs {
+    color: red;
+    width: 40px;
+    height: 40px;
+}
+
+.img-songs {
+    border: 3px solid #ffffff;
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.img-songs:hover {
+    border: 3px solid #bdbdbd;
+    transform: scale(1.1);
+}
+
+.buttons-music {
+    display: flex;
+}
+
+.watermark {
+    padding: 0px 0px 10px 0px;
+    color: white;
+    z-index: 10;
+    align-items: center;
+}
+
+.stuffed {
+    margin-top: 60px;
+}
+
+.title-music {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 415px) {
+    .title-music {
+        font-size: 20px;
+    }
+}
+
+.background {
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
